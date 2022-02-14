@@ -50,7 +50,7 @@ class App extends Component {
           this.updateState(result.response[0].c, result.response[1].c, result.response[2].c, result.response[3].c, result.response[0].tm);
         },
         (error) => {
-          console.log('Erro na consulta de API');
+          console.log(`Erro na consulta de API: ${error}`);
         }
       )
   }
